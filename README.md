@@ -1,10 +1,11 @@
 # 🌿 Planterbox - Smart Plant Identification & Care
 
-## Team Overview
-Team Name - The Founding Farmers
-Roles:
+## Meet the Founding Farmers
+  
   Team Leader - Carlos Rodriguez, crodrig053@citymail.cuny.edu
+  
   Techsmith - MD Omit, momit000@citymail.cuny.edu
+  
   Systems Savvy - Kenny Zhu, kzhu002@citymail.cuny.edu
 
 ## Application Overview  
