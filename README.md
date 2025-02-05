@@ -1,3 +1,5 @@
+WELCOME TO PLANTERBOX
+
 Plant AI - Smart Plant Identification & Care
 🌿 Overview
 Plant AI is a mobile application designed to help plant lovers, gardeners, and botanists identify plants through AI-powered image recognition. Simply take a picture of a plant, and the app will provide valuable insights, including:
