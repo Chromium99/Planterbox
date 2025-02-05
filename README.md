@@ -1,6 +1,13 @@
-# 🌿 Planterbox - Smart Plant Identification & Care  
+# 🌿 Planterbox - Smart Plant Identification & Care
 
-## Overview  
+## Team Overview
+Team Name - The Founding Farmers
+Roles:
+  Team Leader - Carlos Rodriguez, crodrig053@citymail.cuny.edu
+  Techsmith - MD Omit, momit000@citymail.cuny.edu
+  Systems Savvy - Kenny Zhu, kzhu002@citymail.cuny.edu
+
+## Application Overview  
 **Planterbox** is a mobile application designed to help plant lovers, gardeners, and botanists identify plants through AI-powered image recognition. Simply take a picture of a plant, and the app will provide valuable insights, including:  
 
 - 📸 **Plant Identification** – Learn what plant you're looking at in seconds.  
