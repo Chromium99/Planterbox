@@ -2,9 +2,13 @@
 
 ## Meet the Founding Farmers
   
-  Team Leader - Carlos Rodriguez, crodrig053@citymail.cuny.edu
+  Team Leader - Carlos Rodriguez, crodrig053@citymail.cuny.edu. 
+  
+  Welcome to Planterbox. My name is Carlos Rodriguez and I am the Team Leader for this project.
+  
   
   Techsmith - MD Omit, momit000@citymail.cuny.edu
+  
   
   Systems Savvy - Kenny Zhu, kzhu002@citymail.cuny.edu
 
