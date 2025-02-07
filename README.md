@@ -4,13 +4,17 @@
   
   Team Leader - Carlos Rodriguez, crodrig053@citymail.cuny.edu. 
   
-  Welcome to Planterbox. My name is Carlos Rodriguez and I am the Team Leader for this project.
+  Welcome to Planterbox. My name is Carlos Rodriguez and I am the Team Leader for this project. I will be taking responsibility for guiding the project process as well as ensuring that our team is cohesive and on task.
   
   
   Techsmith - MD Omit, momit000@citymail.cuny.edu
+
+  Hello, my name is Md Mazharul Islam Omit and as the techsmith, I will ensure the project fulfill the requirements and I am committed to delivering a flawless project, ensuring it runs smoothly without any bugs.
   
   
   Systems Savvy - Kenny Zhu, kzhu002@citymail.cuny.edu
+
+  Hello, my name is Kenny and as the spec leader, I will ensure the project's success by creating clear, detailed documentation and analyzing potential risks. This will enable us to work efficiently and seamlessly on developing this project.
 
 ## Application Overview  
 **Planterbox** is a mobile application designed to help plant lovers, gardeners, and botanists identify plants through AI-powered image recognition. Simply take a picture of a plant, and the app will provide valuable insights, including:  
