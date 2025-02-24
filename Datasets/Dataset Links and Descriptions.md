@@ -33,7 +33,3 @@ This repository provides a collection of plant image datasets useful for machine
 - **Source:** Available on Zenodo.
 - **Description:** A large-scale plant image dataset with 306,146 images from 1,081 species. It is organized into three subsets: training, validation, and test, with accompanying metadata. This dataset is particularly useful for evaluating set-valued classification methods.
 - **Usability:** Ideal for plant species identification, especially in cases of class imbalance and high inter-class similarity. The dataset includes metadata for species, plant organ type, and dataset split. Code for loading the dataset and training models with PyTorch is available on GitHub.
-
-## Conclusion
-
-These datasets are invaluable resources for researchers and developers working on plant identification, classification, disease detection, and other computer vision tasks in the field of botany and agriculture. Each dataset provides rich annotations and metadata to support machine learning model development.
