@@ -56,19 +56,3 @@ This document provides an overview of various plant image datasets, detailing th
 | **Plant Leaves (TensorFlow)** | Medium (4,502 images) | 22 species, disease-focused | Disease classification, ML training | Seamless TensorFlow integration |
 | **Mendeley Leaf Dataset** | Medium (4,503 images) | 12 species, healthy/diseased | Disease detection, plant identification | Public, not ML-optimized |
 | **Pl@ntNet-300K** | Large (306,146 images) | 1,081 species, plant organs | Large-scale species identification | Public, with ML support |
-
-## Recommendations
-- **For plant disease detection:** Use **TensorFlow’s Plant Leaves** or **Mendeley** datasets.
-- **For species identification:** **Pl@ntNet-300K** is the best choice due to size and diversity.
-- **For houseplants only:** **House Plant Image Classification** dataset is most relevant.
-- **For plant phenotyping & botany research:** **OPIA** is the best option.
-
----
-
-### License & Citation
-Each dataset may have its own licensing terms. Please check the respective sources for proper attribution and citation guidelines.
-
----
-
-### Contributors
-This README was generated to summarize key plant image datasets for research and development in machine learning and botany.
