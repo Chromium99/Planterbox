@@ -2,17 +2,17 @@
 
 ## Meet the Founding Farmers
   
-  Team Leader - Carlos Rodriguez(https://github.com/Chromium99), crodrig053@citymail.cuny.edu. 
+  Team Leader - [Carlos Rodriguez](https://github.com/Chromium99), crodrig053@citymail.cuny.edu. 
   
   Welcome to Planterbox. My name is Carlos Rodriguez and I am the Team Leader for this project. I will be taking responsibility for guiding the project process as well as ensuring that our team is cohesive and on task.
   
   
-  Techsmith - MD Omit(https://github.com/md-mazharul), momit000@citymail.cuny.edu
+  Techsmith - [MD Omit](https://github.com/md-mazharul), momit000@citymail.cuny.edu
 
   Hello, my name is Md Mazharul Islam Omit and as the techsmith, I will ensure the project fulfill the requirements and I am committed to delivering a flawless project, ensuring it runs smoothly without any bugs.
   
   
-  Systems Savvy - Kenny Zhu(https://github.com/kzhu002), kzhu002@citymail.cuny.edu
+  Systems Savvy - [Kenny Zhu](https://github.com/kzhu002), kzhu002@citymail.cuny.edu
 
   Hello, my name is Kenny and as the spec leader, I will ensure the project's success by creating clear, detailed documentation and analyzing potential risks. This will enable us to work efficiently and seamlessly on developing this project.
 
