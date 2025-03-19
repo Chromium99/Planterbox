@@ -43,6 +43,37 @@
   The AI model is the core of the application, allowing users to identify plants and receive care instructions. Its performance will impacts user satisfaction.
 
    
-# 3. Research Exisiting Technologies and Methodologies
+## 3. Research Exisiting Technologies and Methodologies
+
+###**Subtask 1: [Datasets](https://github.com/Chromium99/Planterbox/blob/main/docs/Datasets/Dataset%20Links%20and%20Descriptions.md)**
+
+  **1. [House Plant Image Classification Dataset](https://images.cv/dataset/house-plant-image-classification-dataset)**
+  **Strengths:**
+  - Focused specifically on house plants.
+  - Labeled images for plant identification.
+  **Weaknesses:**
+  - Limited diversity in plant species.
+  **Applicabilty:**
+  - Initial development and testing of models.
+  
+  **2. [Open Plant Image Archive (OPIA)](https://ngdc.cncb.ac.cn/opia/datasets)**
+  **Strengths:**
+  - Contains a wide variety of differnet plant species.
+  - High-quality images with detailed metadata.
+  **Weaknesses:**
+  - May require significant preprocessing.
+  **Applicabilty:**
+  - Disease detection of plants.
+    
+  **3. [Pl@ntNet-300K Dataset](https://zenodo.org/records/5645731#.Yuehg3ZBxPY)**
+  **Strengths:**
+  - Large and diverse plant images datasets.
+  - Ideal for identifying differnet plant species.
+  **Weaknesses:**
+  - Mainly focuses only on plant identification.
+  **Applicabilty:**
+  - Training a plant identification model.
+    
+###**Subtask 2: **
    
-# 4. Reproducible Sources
+## 4. Reproducible Sources
