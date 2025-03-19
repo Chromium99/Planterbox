@@ -21,6 +21,21 @@
   - Mainly focusing on common house plant species. 
 
 # 2. Project Division into Subtasks
+
+  Subtask 1: Data Collection and Preprocessing
+  
+  Description:
+  Collect and preprocess a high-quality dataset of plant images and associated metadata. This dataset will be used to train the AI model for plant identification and care recommendations.
+  
+  Relevance:
+  The accuracy of the AI model depends on the quality and diversity of the dataset. Proper preprocessing ensures the data is clean, labeled, and ready for training.
+
+  Subtask 2:
+   
+  Description:
+
+  
+  Relevance:
    
 # 3. Research Exisiting Technologies and Methodologies
    
