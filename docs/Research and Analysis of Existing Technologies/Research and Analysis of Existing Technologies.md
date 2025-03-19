@@ -52,8 +52,10 @@
   **Strengths:**
   - Focused specifically on house plants.
   - Labeled images for plant identification.
+    
   **Weaknesses:**
   - Limited diversity in plant species.
+    
   **Applicabilty:**
   - Initial development and testing of models.
   
@@ -62,8 +64,10 @@
   **Strengths:**
   - Contains a wide variety of differnet plant species.
   - High-quality images with detailed metadata.
+    
   **Weaknesses:**
   - May require significant preprocessing.
+    
   **Applicabilty:**
   - Disease detection of plants.
     
@@ -72,8 +76,10 @@
   **Strengths:**
   - Large and diverse plant images datasets.
   - Ideal for identifying differnet plant species.
+    
   **Weaknesses:**
   - Mainly focuses only on plant identification.
+    
   **Applicabilty:**
   - Training a plant identification model.
     
