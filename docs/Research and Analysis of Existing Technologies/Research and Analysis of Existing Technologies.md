@@ -48,6 +48,7 @@
 ### **Subtask 1: [Datasets](https://github.com/Chromium99/Planterbox/blob/main/docs/Datasets/Dataset%20Links%20and%20Descriptions.md)**
 
   **1. [House Plant Image Classification Dataset](https://images.cv/dataset/house-plant-image-classification-dataset)**
+  
   **Strengths:**
   - Focused specifically on house plants.
   - Labeled images for plant identification.
@@ -57,6 +58,7 @@
   - Initial development and testing of models.
   
   **2. [Open Plant Image Archive (OPIA)](https://ngdc.cncb.ac.cn/opia/datasets)**
+  
   **Strengths:**
   - Contains a wide variety of differnet plant species.
   - High-quality images with detailed metadata.
@@ -66,6 +68,7 @@
   - Disease detection of plants.
     
   **3. [Pl@ntNet-300K Dataset](https://zenodo.org/records/5645731#.Yuehg3ZBxPY)**
+  
   **Strengths:**
   - Large and diverse plant images datasets.
   - Ideal for identifying differnet plant species.
@@ -74,6 +77,6 @@
   **Applicabilty:**
   - Training a plant identification model.
     
-### **Subtask 2: **
+### Subtask 2: 
    
 ## 4. Reproducible Sources
