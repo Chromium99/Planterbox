@@ -45,7 +45,7 @@
    
 ## 3. Research Exisiting Technologies and Methodologies
 
-###**Subtask 1: [Datasets](https://github.com/Chromium99/Planterbox/blob/main/docs/Datasets/Dataset%20Links%20and%20Descriptions.md)**
+### **Subtask 1: [Datasets](https://github.com/Chromium99/Planterbox/blob/main/docs/Datasets/Dataset%20Links%20and%20Descriptions.md)**
 
   **1. [House Plant Image Classification Dataset](https://images.cv/dataset/house-plant-image-classification-dataset)**
   **Strengths:**
@@ -74,6 +74,6 @@
   **Applicabilty:**
   - Training a plant identification model.
     
-###**Subtask 2: **
+### **Subtask 2: **
    
 ## 4. Reproducible Sources
