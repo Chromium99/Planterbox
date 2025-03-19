@@ -22,20 +22,22 @@
 
 # 2. Project Division into Subtasks
 
-  Subtask 1: Data Collection and Preprocessing
+  **Subtask 1: Data Collection and Preprocessing**
   
-  Description:
+  **Description:**
   Collect and preprocess a high-quality dataset of plant images and associated metadata. This dataset will be used to train the AI model for plant identification and care recommendations.
   
-  Relevance:
+  **Relevance:**
   The accuracy of the AI model depends on the quality and diversity of the dataset. Proper preprocessing ensures the data is clean, labeled, and ready for training.
 
-  Subtask 2:
+  **Subtask 2: AI Model Development and Evaluation**
    
-  Description:
-
+  **Description:**
+  Develop an AI model for plant identification using image recognition. Evaluate the model's performance and fine-tune it for accuracy and efficiency.
   
-  Relevance:
+  **Relevance:**
+  The AI model is the core of the application, allowing users to identify plants and receive care instructions. Its performance will impacts user satisfaction.
+
    
 # 3. Research Exisiting Technologies and Methodologies
    
