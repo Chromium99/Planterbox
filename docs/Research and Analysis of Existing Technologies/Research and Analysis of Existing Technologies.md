@@ -8,8 +8,9 @@
   - Accurate plant identification using image recognition.
   - Generating personalized care instructions based on plant species and environmental conditions.
   - Tracking plant growth and providing insights to improve gardening skills.
+  - Continually training an ML model that we develop.
 
-  The application targets plant enthusiasts, beginner gardeners, and botanists who need a reliable tool to identify plants, learn about their care, and track their progress. The significance lies in making plant care accessible and enjoyable for everyone with the help of technology.
+  The application targets plant enthusiasts, beginner gardeners, and botanists who need a reliable tool to identify plants, learn about their care, and track their progress. The significance lies in making plant care accessible and enjoyable for everyone with the help of technology. Providing the typical member of the household the ability to nurture and care for their plants is the goal of Planterbox.
 
   The research will focus on:
   - AI-powered plant identification using image recognition.
@@ -18,7 +19,9 @@
   - Development of a growth tracking system and gardening recommendations.
 
   Limitations:
-  - Mainly focusing on common house plant species. 
+  - Mainly focusing on common house plant species.
+  - Potential to run into financial complications when the app is deployed
+  - Ability to chart and document growth stages
 
 # 2. Project Division into Subtasks
 
@@ -26,6 +29,7 @@
   
   **Description:**
   Collect and preprocess a high-quality dataset of plant images and associated metadata. This dataset will be used to train the AI model for plant identification and care recommendations.
+  We will ensure that the data processed is first limited in its scope so as to not train our model with uncommon household plants (ie, Carrots and potatoes).
   
   **Relevance:**
   The accuracy of the AI model depends on the quality and diversity of the dataset. Proper preprocessing ensures the data is clean, labeled, and ready for training.
