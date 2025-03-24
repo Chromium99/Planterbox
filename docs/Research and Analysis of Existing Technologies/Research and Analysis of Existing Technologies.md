@@ -25,84 +25,59 @@
 
 ## 2. Project Division into Subtasks
 
-  **Subtask 1: Data Collection and Preprocessing**
+  **Subtask 1: Object Identification**
   
   **Description:**
-  Collect and preprocess a high-quality dataset of plant images and associated metadata. This dataset will be used to train the AI model for plant identification and care recommendations.
-  We will ensure that the data processed is first limited in its scope so we do not train our model with uncommon household plants (ie, Carrots and potatoes).
+  Identify objects in images, ensuring the app can distinguish between plants and non-plant objects.
   
   **Relevance:**
-  The accuracy of the AI model depends on the quality and diversity of the dataset. Proper preprocessing ensures the data is clean, labeled, and ready for training.
+  This ensures that the app focuses only on plant-related images improving the accuracy and efficency with the other tasks.
 
-  **Subtask 2: AI Model Development and Evaluation**
+  **Subtask 2: Plant Identification**
    
   **Description:**
-  Develop an AI model for plant identification using image recognition. Evaluate the model's performance and fine-tune it for accuracy and efficiency.
+  Identify plant species from images.
   
   **Relevance:**
-  The AI model is the core of the application, allowing users to identify plants and receive care instructions. Its performance will impact user satisfaction with the app.
+  Plant identification is the primary functionality of the app, enabling users to learn about the plants they have around.
+  
+**Subtask 3: Disease Detection**
+   
+  **Description:**
+  Detect plant diseases from images, providing users with insights into the health of their plants.
+  
+  **Relevance:**
+  It is a feature that our app will have where disease detection helps users maintain plant health.
 
+  **Subtask 4: Care Recommendations**
+   
+  **Description:**
+  Provide personalized plant care recommendations.
+  
+  **Relevance:**
+  It is a feature that our app will have where users will be able to improve their gardening skills.
    
 ## 3. Research Existing Technologies and Methodologies
 
-### **Subtask 1: [Datasets](https://github.com/Chromium99/Planterbox/blob/main/docs/Datasets/Dataset%20Links%20and%20Descriptions.md)**
+### **Subtask 1: Object Identification**
 
-  **1. [House Plant Image Classification Dataset](https://images.cv/dataset/house-plant-image-classification-dataset)**
+  **1. **
   
   **Strengths:**
-  - Focused specifically on house plants.
-  - Labeled images for plant identification.
+  - 
     
   **Weaknesses:**
-  - Limited diversity in plant species.
+  - 
     
   **Applicability:**
-  - Initial development and testing of models.
+  - 
 
   **Effectiveness:**
-  - Great to use for our focus on beginner gardeners.
-  - Contains common plants people may find in their own home.
+  - 
 
   **Enhancements:**
-  - Include more plant species.
-  
-  **2. [Open Plant Image Archive (OPIA)](https://ngdc.cncb.ac.cn/opia/datasets)**
-  
-  **Strengths:**
-  - Contains a wide variety of different plant species.
-  - High-quality images with detailed metadata.
-    
-  **Weaknesses:**
-  - May require significant preprocessing.
-  - Designed for research in botany and genetics.
-    
-  **Applicability:**
-  - Help with detecting diseases of plants.
+  - 
 
-  **Effectiveness:**
-  - Great at tracking plant growth and detecting diseases.
-
-  **Enhancements:**
-  - Including more images regarding commonly found house plants.
-    
-  **3. [Pl@ntNet-300K Dataset](https://zenodo.org/records/5645731#.Yuehg3ZBxPY)**
-  
-  **Strengths:**
-  - Large and diverse plant image datasets.
-  - Ideal for identifying different plant species.
-    
-  **Weaknesses:**
-  - Mainly focuses only on plant identification.
-  - Many images of only a small group of plant species.
-    
-  **Applicability:**
-  - Training a plant identification model.
-
-  **Effectiveness:**
-  - Great at plant identification with its diverse dataset.
-
-  **Enhancements:**
-  - Including more images of other plant species.
 
     
 ### Subtask 2: 
