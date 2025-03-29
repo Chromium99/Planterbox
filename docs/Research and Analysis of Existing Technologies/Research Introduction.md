@@ -31,6 +31,7 @@
   **Relevance:**
   This ensures that the app focuses only on plant-related images improving the accuracy and efficency with the other tasks.
 
+  
   **Subtask 2: Plant Identification**
    
   **Description:**
@@ -39,6 +40,7 @@
   **Relevance:**
   Plant identification is the primary functionality of the app, enabling users to learn about the plants they have around.
   
+
 **Subtask 3: Disease Detection**
    
   **Description:**
@@ -47,6 +49,7 @@
   **Relevance:**
   It is a feature that our app will have where disease detection helps users maintain plant health.
 
+  
   **Subtask 4: Care Recommendations**
    
   **Description:**
