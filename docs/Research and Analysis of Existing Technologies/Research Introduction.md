@@ -1,5 +1,3 @@
-# Research and Analysis of Existing Technologies
-
 ## 1. Problem Definition and Scope
 
   The goal of Planterbox is to create an AI-powered mobile application that helps users identify plants, provide care instructions, track plant growth, and offer gardening recommendations. 
@@ -56,30 +54,3 @@
   
   **Relevance:**
   It is a feature that our app will have where users will be able to improve their gardening skills.
-   
-## 3. Research Existing Technologies and Methodologies
-
-### **Subtask 1: Object Identification**
-
-  **1. **
-  
-  **Strengths:**
-  - 
-    
-  **Weaknesses:**
-  - 
-    
-  **Applicability:**
-  - 
-
-  **Effectiveness:**
-  - 
-
-  **Enhancements:**
-  - 
-
-
-    
-### Subtask 2: 
-   
-## 4. Reproducible Sources
