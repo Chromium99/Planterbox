@@ -49,8 +49,3 @@ In our plant detection software, we use YOLOv8 as the **first step** in the pipe
 5. **Post-processing** → applies Non-Maximum Suppression (NMS) to remove duplicate detections.
 
 ---
-
-## Example: Detecting a Plant
-
-Given an image like this:
-
