@@ -23,27 +23,17 @@
 
 ## 2. Project Division into Subtasks
 
-  **Subtask 1: Object Identification**
+  **Subtask 1: Object/ Plant Identification**
   
   **Description:**
-  Identify objects in images, ensuring the app can distinguish between plants and non-plant objects.
+  Identify objects in images, ensuring the app can distinguish between plants and non-plant objects, and identify plant species from images.
   
   **Relevance:**
   This ensures that the app focuses only on plant-related images improving the accuracy and efficency with the other tasks.
-
---------------------------------------------------------------------------------------------------------------------------------
-  
-  **Subtask 2: Plant Identification**
-   
-  **Description:**
-  Identify plant species from images.
-  
-  **Relevance:**
   Plant identification is the primary functionality of the app, enabling users to learn about the plants they have around.
-  
---------------------------------------------------------------------------------------------------------------------------------
 
-**Subtask 3: Disease Detection**
+
+**Subtask 2: Disease Detection**
    
   **Description:**
   Detect plant diseases from images, providing users with insights into the health of their plants.
@@ -53,7 +43,7 @@
 
 --------------------------------------------------------------------------------------------------------------------------------
   
-  **Subtask 4: Care Recommendations**
+  **Subtask 3: Care Recommendations**
    
   **Description:**
   Provide personalized plant care recommendations.
