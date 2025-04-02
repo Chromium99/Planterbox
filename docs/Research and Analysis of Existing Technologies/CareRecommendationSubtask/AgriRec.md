@@ -20,3 +20,7 @@ AgriRec is a machine learning-based crop and fertilizer recommendation algorithm
 **Referencees:**
 - [Multi-criteria Agriculture Recommendation System using
 Machine Learning for Crop and Fertilizesrs Prediction.](https://pdfs.semanticscholar.org/3d7d/1a1a88758e686e046cb1ac361f60eebd8c2d.pdf)
+- [Soil Information]((https:/soilhealth.dac.
+gov.in/)
+- [Market Value of Crops](https://
+farmer.gov.in/mspstatements.aspx)
