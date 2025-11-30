@@ -1,6 +1,5 @@
-This text explains, in plain English, how to run the project code on your own computer and what each Python file does.
-
-You should have these four Python files in the src folder:
+ HOW TO RUN THE CODE
+ You should have these four Python files in the src folder:
 
 clean_images.py
 
