@@ -1,179 +1,321 @@
-1. Install Requirements
-Clone the repo
-git clone <your_repo_url>
-cd Planterbox
+This text explains, in plain English, how to run the project code on your own computer and what each Python file does.
 
-Create a virtual environment
+You should have these four Python files in the src folder:
 
-Windows:
+clean_images.py
 
+exp_mbv3.py
+
+predict_annotate.py
+
+train_mobilenet_v3.py
+
+You should also have a data folder and a models folder at the root of the project.
+
+SETUP ON YOUR COMPUTER
+=========================
+
+Make sure you have Python 3 installed.
+
+Open a terminal (PowerShell on Windows, Terminal on Mac/Linux).
+
+Go to the project folder, for example:
+
+cd C:\Users<your_name>\Documents\Planterbox
+
+Create a virtual environment:
+
+On Windows:
 python -m venv venv
 .\venv\Scripts\activate
 
-
-Mac/Linux:
-
+On Mac/Linux:
 python3 -m venv venv
 source venv/bin/activate
 
-Install dependencies
+Install the required Python packages:
 pip install -r requirements.txt
 
-2. Project Folder Structure
+After this, you are ready to run the scripts.
 
-Your directory must look like this:
+FOLDER STRUCTURE YOU SHOULD HAVE
+====================================
+
+Your project should roughly look like this:
 
 Planterbox/
-│
-├── data/
-│   ├── species/
-│   │     ├── Aloe Vera/
-│   │     ├── Orchid/
-│   │     ├── Peace Lily/
-│   │     └── ... (47 total species)
-│   │
-│   └── splits/
-│         ├── train/
-│         ├── val/
-│         └── test/
-│
-├── models/
-│   └── species/
-│         ├── experiments/
-│         │      ├── baseline224/
-│         │      ├── ft224/
-│         │      ├── ft224_cw/
-│         │      ├── ft256_cw/
-│         │
-│         ├── release/
-│         │      ├── model.tflite
-│         │      ├── labels.txt
-│         │
-│         └── meta/
-│                └── class_names.json
-│
-├── predictions_out/
-│
-├── src/
-│   ├── train_mobilenet_v3.py
-│   ├── predict_annotate.py
-│   └── clean_images.py
-│
-└── README.md
+data/
+species/ (raw images, one subfolder per plant species)
+splits/ (will be created automatically by the training/experiment code)
+models/
+species/
+experiments/ (will be created and filled by training/experiments)
+release/ (final model for deployment)
+meta/ (class_names.json etc., depending on how the scripts are set up)
+predictions_out/ (will be created by predict_annotate.py)
+src/
+clean_images.py
+exp_mbv3.py
+predict_annotate.py
+train_mobilenet_v3.py
+README or other files
 
-3. Preparing the Dataset
-3.1 Add raw species images
+Important:
 
-Download the Kaggle houseplant dataset and place all species folders into:
+data/species must contain one folder per plant species, with images inside each.
 
-Planterbox/data/species/
+data/splits will be created automatically if it doesn’t exist.
 
-3.2 Clean corrupted/alpha-channel images
+WHAT EACH PYTHON FILE DOES
+=============================
 
-This converts everything to RGB JPG:
+clean_images.py
 
-python .\src\clean_images.py
+Purpose:
 
-3.3 Rebuild train/val/test splits (optional)
+This script goes through your image folders and makes sure all images are in a consistent format (for example, converts RGBA PNGs with transparency to normal RGB JPGs, and may skip or clean corrupted images).
 
-If you want a fresh split:
+What it is used for:
 
-Remove-Item .\data\splits -Recurse -Force
+It prevents training crashes caused by weird image formats (like images with 4 channels or grayscale).
 
+It is usually run once after you download or move a new dataset into data/species.
 
-The training script will recreate splits automatically if missing.
+How to run it:
 
-4. Training the Model
+Make sure your virtual environment is active.
 
-Run:
+Make sure your raw images are inside data/species/<species_name>.
 
-python .\src\train_mobilenet_v3.py
+From the root project folder run:
+python src/clean_images.py
 
+What happens:
 
-This script:
+It will scan through the target folders defined inside the script (commonly data/species and sometimes data/splits).
 
-Loads ~14,700 plant images
+It will convert or fix images so that all of them are safe to feed into the model.
 
-Creates an 80/10/10 train/val/test split
+If something breaks:
 
-Trains several MobileNetV3 variants
+Check the console output to see which file caused the issue.
 
-Saves best model weights to:
+Remove or replace any truly corrupted images.
 
-models/species/experiments/<variant>/best.keras
+exp_mbv3.py
 
+Purpose:
 
-Exports a TFLite model to:
+This is the “experiment” script for training multiple versions of MobileNetV3.
 
-models/species/release/model.tflite
+It lets you easily run different configurations (baseline, fine-tuned, with class weights, with different image sizes, etc.) and saves metrics for comparison.
 
-Best-performing model
-ft224_cw
+What it is used for:
 
+Running comparisons between:
 
-(“Fine-tuned at 224px with class weights”)
+baseline224
 
-5. Running Predictions
-
-Run inference on an image or entire folder:
-
-python .\src\predict_annotate.py "<path_to_image_or_folder>"
-
-
-This script:
-
-Loads your trained model
-
-Performs species prediction
-
-Writes annotated images to:
-
-Planterbox/predictions_out/
-
-
-Example annotation:
-
-Aloe Vera (1.00)
-Orchid (0.00)
-Snake Plant (0.00)
-
-6. Model Variants
-Variant	Description
-baseline224	224px, no fine-tuning
-ft224	fine-tuned layers
-ft224_cw	fine-tuned + class weights (BEST)
-ft256_cw	256px resolution, slightly better but slower
-
-Selected model for deployment:
+ft224
 
 ft224_cw
 
-7. Deploying to Mobile (Planterbox App)
+ft256_cw
 
-Use these files:
+Producing summary files (like JSON and CSV/Excel) you can use in your presentation to show accuracy and macro F1 scores.
 
-models/species/release/model.tflite
-models/species/release/labels.txt
+How to run a basic experiment:
 
+Activate your virtual environment.
 
-Make sure the mobile app applies the same preprocessing:
+Go to the project root.
 
-Resize to 224×224
+Run something like:
+python src/exp_mbv3.py --tag baseline224
 
-Scale pixels to [-1, 1]
+Common flags (depending on how it was set up in your version):
 
-8. Team Summary
+--img 224 or 256 (input image size)
 
-Each team member can:
+--finetune (turn on fine-tuning of top layers)
 
-Train new model variants
+--class_weight (use class weights for imbalanced classes)
 
-Run inference locally
+--freeze_bn (freeze batch normalization layers when fine-tuning)
 
-Generate annotated prediction examples
+--tag NAME (name the run, used as folder name in models/species/experiments)
 
-Analyze model performance
+Example runs:
 
-Integrate the .tflite model into the app
+Baseline:
+python src/exp_mbv3.py --tag baseline224
 
-Modify and extend the training pipeline
+Fine-tuned:
+python src/exp_mbv3.py --finetune --freeze_bn --tag ft224
+
+Fine-tuned + class weights:
+python src/exp_mbv3.py --finetune --freeze_bn --class_weight --tag ft224_cw
+
+What happens:
+
+The script loads images from data/splits/train, /val, and /test.
+
+If splits do not exist yet, usually you should run train_mobilenet_v3.py once to create them.
+
+It trains a model using the chosen options.
+
+It saves:
+
+best.keras (the best Keras model)
+
+model.tflite (a TFLite version for mobile)
+
+summary and report files (accuracy, macro F1, per-class metrics)
+under models/species/experiments/<tag>.
+
+train_mobilenet_v3.py
+
+Purpose:
+
+This is the main training pipeline script for your project, often focused on the final chosen configuration (for example, ft224_cw).
+
+It handles:
+
+Creating the train/val/test splits (if they don’t exist)
+
+Building the MobileNetV3 model
+
+Training it
+
+Saving the main model and TFLite export
+
+Typical usage:
+
+Run this once to set up and train your main model:
+python src/train_mobilenet_v3.py
+
+What it does step by step:
+
+Checks data/species for all species folders and images.
+
+If data/splits does not exist, it randomly splits the data into:
+
+train (80%)
+
+val (10%)
+
+test (10%)
+
+Builds a MobileNetV3-based classifier with the correct input size (usually 224x224) and number of classes.
+
+Applies data augmentation and proper preprocessing (such as scaling pixels to [-1, 1]).
+
+Trains the model for a certain number of epochs.
+
+Sometimes (depending on the code) it does a second phase of training where it unfreezes part of the backbone (fine-tuning).
+
+Saves:
+
+The best Keras model (best.keras)
+
+A TFLite model (model.tflite), often in models/species/release/
+
+Optional summary/metrics files (JSON or CSV) used for reporting.
+
+Use this script when:
+
+You or a teammate wants to retrain the main model from scratch.
+
+You change the dataset and want an updated model.
+
+You want a simple, default way to reproduce the final model without messing with experimental flags.
+
+predict_annotate.py
+
+Purpose:
+
+This script is used to test the trained model on real images.
+
+It loads the trained model and labels, runs prediction on one image or a folder of images, and saves new copies with the predicted plant name written on top.
+
+How to run it:
+
+Make sure you have already trained a model (for example ft224_cw) and it is saved in models/species/experiments/<variant>/best.keras.
+
+Make sure you have labels.txt generated (or the script loads class names from meta/class_names.json).
+
+Activate the virtual environment.
+
+From the project root, run:
+python src/predict_annotate.py "PATH_TO_IMAGE_OR_FOLDER"
+
+Examples:
+
+Single image:
+python src/predict_annotate.py "C:\Users\you\Pictures\plant.jpg"
+
+Folder of images:
+python src/predict_annotate.py "C:\Users\you\Pictures\plants_to_test"
+
+What happens:
+
+The script loads the Keras model (best.keras) for the chosen variant (e.g., ft224_cw).
+
+It reads the labels in the same order as the model’s outputs.
+
+For each image:
+
+It resizes it to the correct input size (e.g., 224x224).
+
+It applies the same preprocessing as training (e.g., MobileNetV3’s preprocess_input).
+
+It runs the model to get probabilities for all species.
+
+It finds the top-k predictions (usually top 3).
+
+It opens the original image, draws a black rectangle at the top, and writes:
+SpeciesName1 (probability)
+SpeciesName2 (probability)
+SpeciesName3 (probability)
+
+It saves the annotated image into the predictions_out folder with a new filename like originalname_pred.jpg.
+
+This is what you use when you want to:
+
+Show that the model works on real photos.
+
+Create example images for your presentation.
+
+Let teammates quickly test the model on their own plant photos.
+
+TYPICAL WORKFLOW FOR A TEAMMATE
+==================================
+
+Here is a simple step-by-step list your groupmates can follow on their own machine:
+
+Clone the repository and go into the Planterbox folder.
+
+Create and activate a virtual environment.
+
+Install dependencies using:
+pip install -r requirements.txt
+
+Make sure the dataset is in the correct place:
+
+All species folders are in data/species.
+
+Run the cleaning script:
+python src/clean_images.py
+
+Train the main model:
+
+Either run the standard training script:
+python src/train_mobilenet_v3.py
+
+Or run the experiment script with desired options, for example:
+python src/exp_mbv3.py --finetune --freeze_bn --class_weight --tag ft224_cw
+
+Once training finishes, test the model on some images:
+python src/predict_annotate.py "path_to_image_or_folder"
+
+Open the predictions_out folder and look at the annotated images to see what the model predicted.
