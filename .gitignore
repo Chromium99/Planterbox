@@ -13,3 +13,34 @@
 .externalNativeBuild
 .cxx
 local.properties
+# Ignore raw image datasets
+data/species/
+data/disease/
+
+# Ignore automatically generated splits
+data/splits/
+
+# Ignore large model experiment folders
+models/species/experiments/
+models/disease/experiments/
+
+# Ignore model checkpoints
+*.keras
+*.h5
+*.ckpt
+*.pb
+
+# Optional: If final TFLite models are too big, uncomment to ignore
+# models/species/release/model.tflite
+# models/disease/release/model.tflite
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+
+# OS junk
+.DS_Store
+Thumbs.db
