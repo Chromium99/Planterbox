@@ -1,4 +1,5 @@
  HOW TO RUN THE CODE
+ =========================
  You should have these four Python files in the src folder:
 
 clean_images.py
