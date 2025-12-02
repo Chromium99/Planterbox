@@ -16,20 +16,38 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:padding="8dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:background="#F2F2F2"
+            android:fontFamily="monospace"
+            android:lineSpacingExtra="4dp"
             android:textIsSelectable="true"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text='{"status":"ok","message":"Received image"}' />
+            tools:text="Validated species: Aloe Vera
+Visible symptoms:
+ - Leaves are thin and shriveled
+ - Lower leaves are browning and curling downwards
+Likely causes:
+ - Underwatering
+ - Insufficient moisture
+Care recommendations:
+ Aloe Vera needs well-drained soil, indirect sunlight...
+Urgency level: High
+
+===== KEYWORD MATCH EVALUATION =====
+Keywords FOUND: indirect, water, sandy, sunlight
+Keywords NOT FOUND: balanced, feels
+Matched 7 / 10
+Keyword Score: 70%" />
 
         <Button
             android:id="@+id/backButton"
             android:layout_width="540dp"
             android:layout_height="54dp"
-            android:text="Go"
+            android:text="Home"
             app:layout_constraintTop_toBottomOf="@id/text_response"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="24dp"/>
