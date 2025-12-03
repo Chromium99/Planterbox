@@ -89,27 +89,24 @@ def annotate_one(src_path: Path, k=3) -> Path:
     return out
 
 # ---- CLI ----
-def main():
-    if len(sys.argv) < 2:
-        print("Usage: python src/predict_annotate.py <image_or_folder>")
-        sys.exit(1)
-    target = Path(sys.argv[1])
-    if not target.exists():
-        print("Path does not exist:", target)
-        sys.exit(1)
+INPUT_DIR = Path(r"E:\CUNY\Fall 25\senior design\practice server\cleaned_output")
+VALID_EXTS = {".jpg", ".jpeg", ".png", ".bmp", ".webp"}
 
-    if target.is_file():
-        out = annotate_one(target)
-        print("Wrote", out)
-    else:
-        exts = {".jpg", ".jpeg", ".png", ".bmp"}
-        files = [p for p in target.rglob("*") if p.suffix.lower() in exts]
-        if not files:
-            print("No images found in", target)
-            sys.exit(0)
-        for f in files:
-            out = annotate_one(f)
-            print("Wrote", out)
+def get_latest_image(dirpath: Path):
+    files = [
+        p for p in dirpath.iterdir()
+        if p.is_file() and p.suffix.lower() in VALID_EXTS
+    ]
+    if not files:
+        raise ValueError(f"No images found in {dirpath}")
+    return max(files, key=lambda p: p.stat().st_mtime)
+
+def main():
+    # always use cleaned_output — ignore CLI
+    img_path = get_latest_image(INPUT_DIR)
+    print("Using:", img_path)
+    out = annotate_one(img_path)
+    print("Wrote:", out)
 
 if __name__ == "__main__":
     main()
