@@ -4,6 +4,13 @@ Planterbox is an AI-powered mobile application that helps plant lovers identify 
 
 ---
 
+## 🔗 Repositories
+
+- **📱 Application Repository (Android / APK):** [Planterbox-Application](https://github.com/Chromium99/Planterbox-Application)  
+- **📘 Research & Documentation Repository (this repo):** You are currently viewing it.
+
+---
+
 ## 👩‍🌾 Meet the Founding Farmers
 
 ### Team Leader — Carlos Rodriguez  
