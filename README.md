@@ -1,48 +1,68 @@
-# 🌿 Planterbox - Smart Plant Identification & Care
+# 🌿 Planterbox — Smart Plant Identification & Care
 
-## Meet the Founding Farmers
-  
-  Team Leader - [Carlos Rodriguez](https://github.com/Chromium99), crodrig053@citymail.cuny.edu. 
-  
-  Welcome to Planterbox. My name is Carlos Rodriguez and I am the Team Leader for this project. I will be taking responsibility for guiding the project process as well as ensuring that our team is cohesive and on task.
-  
-  
-  Techsmith - [MD Omit](https://github.com/md-mazharul), momit000@citymail.cuny.edu
+Planterbox is an AI-powered mobile application that helps plant lovers identify plants from photos and receive clear, actionable care guidance—fast.
 
-  Hello, my name is Md Mazharul Islam Omit and as the techsmith, I will ensure the project fulfill the requirements and I am committed to delivering a flawless project, ensuring it runs smoothly without any bugs.
-  
-  
-  Systems Savvy - [Kenny Zhu](https://github.com/kzhu002), kzhu002@citymail.cuny.edu
+---
 
-  Hello, my name is Kenny and as the spec leader, I will ensure the project's success by creating clear, detailed documentation and analyzing potential risks. This will enable us to work efficiently and seamlessly on developing this project.
+## 👩‍🌾 Meet the Founding Farmers
 
-## Application Overview  
-**Planterbox** is a mobile application designed to help plant lovers, gardeners, and botanists identify plants through AI-powered image recognition. Simply take a picture of a plant, and the app will provide valuable insights, including:  
+### Team Leader — Carlos Rodriguez  
+- GitHub: [Chromium99](https://github.com/Chromium99)  
+- Email: crodrig053@citymail.cuny.edu  
+Carlos leads project execution, keeps the team aligned, and ensures milestones are met on schedule.
 
-- 📸 **Plant Identification** – Learn what plant you're looking at in seconds.  
-- 🌱 **Care Instructions** – Get personalized tips on how to keep your plant healthy.  
-- 🔄 **Lifecycle Information** – Understand how your plant evolves over time.  
-- 📂 **Plant Library** – Keep a personal collection of identified plants and track their progress.  
-- 🏡 **Smart Gardening Insights** – Receive recommendations on how to improve your gardening skills.  
+### Techsmith — MD Omit  
+- GitHub: [md-mazharul](https://github.com/md-mazharul)  
+- Email: momit000@citymail.cuny.edu  
+MD ensures the implementation meets requirements and focuses on stability, performance, and bug-free delivery.
 
-## 📌 Why This Project?  
-This application is a learning journey for us, as it involves new technologies and development practices. Our goal is to create an intuitive tool that empowers plant enthusiasts to make informed decisions about their green companions, ensuring they thrive in any environment.  
+### Systems Savvy — Kenny Zhu  
+- GitHub: [kzhu002](https://github.com/kzhu002)  
+- Email: kzhu002@citymail.cuny.edu  
+Kenny leads specification and documentation efforts, evaluates risks, and helps the team work efficiently with clear technical direction.
 
-## 🔧 Features (Planned)  
-✅ AI-powered plant recognition  
-✅ Personalized plant care guides  
-✅ Growth tracking & history log  
-✅ Gardening recommendations based on past observations  
-✅ User-friendly and visually engaging interface  
+---
 
-## 🚀 Future Enhancements  
+## 📱 Application Overview
+
+**Planterbox** is designed for plant enthusiasts, gardeners, and students who want reliable plant identification and care information. With a single photo, the app aims to provide:
+
+- 📸 **Plant Identification** — Identify a plant in seconds from an image  
+- 🌱 **Care Instructions** — Practical, easy-to-follow care guidance  
+- 🔄 **Lifecycle Information** — Learn how the plant grows and changes over time  
+- 📂 **Plant Library** — Save identified plants and track progress  
+- 🏡 **Smart Gardening Insights** — Recommendations to improve plant care decisions
+
+---
+
+## 🎯 Why This Project?
+
+This project is a hands-on learning experience for our team, combining modern mobile development with machine learning workflows. Our goal is to build an intuitive tool that helps people make informed decisions about their plants so they can thrive in any environment.
+
+---
+
+## 🧩 Planned Features
+
+- ✅ AI-powered plant recognition  
+- ✅ Personalized plant care guides  
+- ✅ Growth tracking & history log  
+- ✅ Recommendations based on prior observations  
+- ✅ User-friendly, visually engaging interface
+
+---
+
+## 🔮 Future Enhancements
+
 - 🌍 Community-driven plant database  
-- 🏥 AI-powered plant health diagnosis  
-- 📲 Potential for Augmented reality (AR) integration for interactive learning  
+- 🏥 AI-assisted plant health diagnosis  
+- 📲 Potential AR (Augmented Reality) integration for interactive learning
 
-## 🌎 Who is it for?  
-- **🌿 Plant Enthusiasts** – Improve your gardening skills and expand your plant knowledge.  
-- **🌻 Beginner Gardeners** – Learn how to care for your plants the right way.  
-- **📚 Botanists & Researchers** – Keep a structured log of plant species and their conditions.  
+---
 
-This project aims to bridge the gap between technology and nature, making plant care more accessible and enjoyable for everyone! 🌱✨  
+## 🌎 Who Is It For?
+
+- 🌿 **Plant Enthusiasts** — Grow your knowledge and improve results  
+- 🌻 **Beginner Gardeners** — Learn foundational care practices confidently  
+- 📚 **Botanists & Researchers** — Maintain structured logs of species and conditions  
+
+Planterbox bridges technology and nature—making plant care more accessible, informative, and enjoyable. 🌱✨
